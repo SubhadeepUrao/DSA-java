@@ -9,7 +9,7 @@ class PriorityQueue {
     int size;
 
     PriorityQueue() {
-        heap = new int[20];
+        heap = new int[1000];
         size = -1;
     }
 
