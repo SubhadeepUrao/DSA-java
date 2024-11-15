@@ -13,6 +13,9 @@ public class Demo {
         for(int i = 0; i < k; ++i)
             pq.add(nums[i]);
 
+        // minheap contains k largest elements among the elements seen so far
+        // and will also contain k largest elements on seeing elements ahead
+
         for(int i = k; i < n; ++i)
             if(nums[i] > pq.peek()) {
                 pq.remove();
