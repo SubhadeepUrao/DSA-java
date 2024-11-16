@@ -20,7 +20,7 @@ public class Optimal {
             if(freq[i] == maxf) ++maxf_elem;
         
         int gaps_between_maxf = maxf - 1; // A _ _ _ A _ _ _ A => 2 gaps
-        int rem_gaps = n - (maxf_elem - 1); // A B _ _ A B _ _ A => 2 remaining gaps after filing maxf
+        int rem_gaps = n - (maxf_elem - 1); // A B _ _ A B _ _ A B => 2 remaining gaps after filing maxf
 
         int rem_slots = gaps_between_maxf * rem_gaps;
         int rem_tasks = N - maxf * maxf_elem;
