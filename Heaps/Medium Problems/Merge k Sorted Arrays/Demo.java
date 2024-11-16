@@ -69,10 +69,8 @@ public class Demo {
             
             // System.out.println(arr[0][0] + " >> " + Arrays.toString(heapsizeInner));
 
-            
             swap(arr[0], 0, --heapsizeInner[0]);
             minHeapify(arr[0], 0, heapsizeInner[0]);
-
             
             // System.out.println(Arrays.toString(arr[0]));
 
