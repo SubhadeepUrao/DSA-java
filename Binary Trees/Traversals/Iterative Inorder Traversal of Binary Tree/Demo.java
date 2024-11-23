@@ -31,4 +31,28 @@ class Solution {
 
         return list;
     }
+    
+    // public List<Integer> inorderTraversal(TreeNode root) {
+    //     // original tree gets destroyed
+    //     Stack<TreeNode> st = new Stack<>();
+    //     List<Integer> list = new ArrayList<>();
+        
+    //     if(root == null) return list;
+
+    //     st.push(root);
+    //     while(!st.empty()) {
+    //         root = st.pop();
+    //         if(root.left == null && root.right == null) {
+    //             list.add(root.val);
+    //             continue;
+    //         }
+    //         TreeNode left = root.left;
+    //         TreeNode right = root.right;
+    //         root.left = root.right = null;
+    //         if(right != null) st.push(right);
+    //         st.push(root);
+    //         if(left != null) st.push(left);
+    //     }
+    //     return list;
+    // }
 }
