@@ -24,7 +24,8 @@ class Solution {
             else {
                 if(st.peek().left == st.peek().right) { // leaf node
                     // res.add(String.join("->", list.stream().map(String::valueOf).toList()));
-                    res.add(list.stream().map(String::valueOf).collect(Collectors.joining("->")));
+                    // res.add(list.stream().map(String::valueOf).collect(Collectors.joining("->")));
+                    res.add(list.stream().map(i -> i.toString()).collect(Collectors.joining("->")));
                 }
                 do {
                     root = st.pop();
