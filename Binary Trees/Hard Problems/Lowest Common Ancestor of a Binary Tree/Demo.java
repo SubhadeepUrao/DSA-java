@@ -17,6 +17,10 @@ class Solution {
        if(left != null && right != null) return root;
        else if(left != null) return left;
        return right;
+
+    //    if(left == null) return right;
+    //    else if(right == null) return left;
+    //    return root;
    }
 
 //    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
