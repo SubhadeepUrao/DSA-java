@@ -43,6 +43,8 @@ class Solution
         }
         
         return new int[]{ 0, Math.max(left[1], right[1]) + 1 };
+        // left[1] = Math.max(left[1], right[1]) + 1;
+        // return left;
     }
     
     public int minTime(Node root, int target) {
