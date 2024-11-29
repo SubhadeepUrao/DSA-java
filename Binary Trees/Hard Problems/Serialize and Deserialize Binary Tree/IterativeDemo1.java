@@ -1,5 +1,6 @@
 
 // HANDLES DUPLICATE NODE VALUES
+// FOLLOWS LEVEL ORDER
 
 import java.util.LinkedList;
 import java.util.Queue;

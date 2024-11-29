@@ -31,7 +31,7 @@ class Solution {
 
         return list;
     }
-    
+     
     // public List<Integer> inorderTraversal(TreeNode root) {
     //     // original tree gets destroyed
     //     Stack<TreeNode> st = new Stack<>();

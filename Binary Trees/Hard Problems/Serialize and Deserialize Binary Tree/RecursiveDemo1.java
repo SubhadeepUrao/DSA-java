@@ -1,5 +1,6 @@
 
 // HANDLES DUPLICATE NODE VALUES
+// FOLLOWS DFS
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -43,7 +44,7 @@ class Codec {
         root.right = buildTree(q);
         return root;
     }
-    
+
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
         if(data.equals("")) return null;

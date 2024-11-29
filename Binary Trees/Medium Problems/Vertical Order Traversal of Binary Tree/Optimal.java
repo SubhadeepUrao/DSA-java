@@ -47,6 +47,5 @@ class Solution {
         q.add(newPair);
         dfs(node.left, row + 1, col - 1, q);
         dfs(node.right, row + 1, col + 1, q);
-
     }
 }
