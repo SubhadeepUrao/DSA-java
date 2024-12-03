@@ -19,6 +19,7 @@ class Solution {
        while(root != null) {
            if(root.right == null) {
                root.right = inorderSucc;
+               if(inorderSucc != null) inorderSucc.left = root;
                inorderSucc = root;
                root = root.left;
            }
@@ -35,6 +36,7 @@ class Solution {
                }
                else {
                    root.right = inorderSucc;
+                   if(inorderSucc != null) inorderSucc.left = root;
                    inorderSucc = root;
                    root = root.left;
                }
