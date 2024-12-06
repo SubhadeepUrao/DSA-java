@@ -19,6 +19,7 @@ class Solution {
         boolean[][] visited = new boolean[M][N];
         Queue<Info> q = new LinkedList<>();
 
+        // infected cells are found
         for(int i = 0; i < M; ++i)
             for(int j = 0; j < N; ++j)
                 if(mat[i][j] == 0) {
@@ -28,6 +29,10 @@ class Solution {
 
         int[][] moves = {{0,-1}, {-1,0}, {0,1}, {1,0}};
 
+        // cells closest to their respective infected roots, are marked with a distance
+        // respective to their infected roots
+        // visited array is maintained so that only closest infected root marks a cell
+        // with their respective distance
         while(!q.isEmpty()) {
             Info info = q.poll();
             int i = info.i;
