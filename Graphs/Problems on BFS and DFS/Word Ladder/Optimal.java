@@ -52,5 +52,34 @@ class Solution {
         }
         return 0;
     }
+    // public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+    //     Queue<Pair> q = new LinkedList<>();
+    //     Set<String> visited = new HashSet<>(wordList);
+    //     int wordSize = beginWord.length();
 
+    //     q.offer(new Pair(beginWord, 1));
+    //     visited.remove(beginWord);
+    //     while(!q.isEmpty()) {
+    //         String word = q.peek().word;
+    //         int pathLength = q.poll().pathLength;
+    //         if(word.equals(endWord)) return pathLength;
+
+            
+    //         char[] replacedString = word.toCharArray();
+    //         for(int i = 0; i < wordSize; ++i) {
+    //             for(char ch = 'a'; ch <= 'z'; ++ch) {
+    //                 char temp = replacedString[i];
+    //                 replacedString[i] = ch;
+    //                 // String nextWord = new String(replacedString);
+    //                 String nextWord = Arrays.toString(replacedString);
+    //                 if(visited.contains(nextWord)) {
+    //                     visited.remove(nextWord);
+    //                     q.offer(new Pair(nextWord, pathLength + 1));
+    //                 }
+    //                 replacedString[i] = temp;
+    //             }
+    //         }
+    //     }
+    //     return 0;
+    // }
 }
