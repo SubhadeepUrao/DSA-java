@@ -62,16 +62,15 @@ class Solution {
     //     while(!q.isEmpty()) {
     //         String word = q.peek().word;
     //         int pathLength = q.poll().pathLength;
-    //         if(word.equals(endWord)) return pathLength;
 
+    //         if(word.equals(endWord)) return pathLength;
             
     //         char[] replacedString = word.toCharArray();
     //         for(int i = 0; i < wordSize; ++i) {
     //             for(char ch = 'a'; ch <= 'z'; ++ch) {
     //                 char temp = replacedString[i];
     //                 replacedString[i] = ch;
-    //                 // String nextWord = new String(replacedString);
-    //                 String nextWord = Arrays.toString(replacedString);
+    //                 String nextWord = new String(replacedString);
     //                 if(visited.contains(nextWord)) {
     //                     visited.remove(nextWord);
     //                     q.offer(new Pair(nextWord, pathLength + 1));
