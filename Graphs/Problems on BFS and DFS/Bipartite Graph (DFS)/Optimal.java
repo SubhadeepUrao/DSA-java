@@ -1,7 +1,6 @@
 class Solution {
     boolean dfs(int[][] graph, int node, boolean[] A, boolean[] B) {
-        if(!A[node] && !B[node])
-            A[node] = true;
+        A[node] = true;
 
         for(int neighbour : graph[node]) {
             if(A[neighbour]) return false;

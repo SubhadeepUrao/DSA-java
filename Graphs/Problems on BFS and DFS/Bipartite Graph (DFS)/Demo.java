@@ -3,8 +3,7 @@ import java.util.Set;
 
 class Solution {
     boolean dfs(int[][] graph, int node, Set<Integer> A, Set<Integer> B) {
-        if(!A.contains(node) && !B.contains(node))
-            A.add(node);
+        A.add(node);
 
         for(int neighbour : graph[node]) {
             if(A.contains(neighbour)) return false;
