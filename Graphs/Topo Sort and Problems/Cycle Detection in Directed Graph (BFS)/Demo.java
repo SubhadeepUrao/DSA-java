@@ -24,7 +24,7 @@ class Solution {
                     q.offer(neighbour);
             }
         }
-        return next == V ? true : false;
+        return next == V ? false : true;
     }
     public boolean isCyclic(int V, ArrayList<ArrayList<Integer>> adj) {
         int[] indegree = new int[V];
