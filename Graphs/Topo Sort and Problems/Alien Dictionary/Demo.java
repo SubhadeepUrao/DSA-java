@@ -59,10 +59,10 @@ class Demo {
                 return "";
         }
 
-        return String.join(" -> ", new String(res).split(""));
+        return String.join(" < ", new String(res).split(""));
         // return IntStream.range(0, res.length)
         //                 .mapToObj(i -> String.valueOf(res[i]))
-        //                 .collect(Collectors.joining(" -> "));
+        //                 .collect(Collectors.joining(" < "));
     }
 
     public static void main(String[] args) throws IOException {
