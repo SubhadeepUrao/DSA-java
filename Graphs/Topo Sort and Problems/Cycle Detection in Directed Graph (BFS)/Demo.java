@@ -6,7 +6,7 @@ class Solution {
     boolean detectCycleBFS(ArrayList<ArrayList<Integer>> adj, int[] indegree) {
         int V = indegree.length;
         Queue<Integer> q = new LinkedList<>();
-        int[] topoSeq = new int[V];
+        // int[] topoSeq = new int[V]; // we just need to keep track of elements in sequence
         int next = 0;
 
         for(int i = 0; i < V; ++i) {
@@ -16,7 +16,8 @@ class Solution {
 
         while(!q.isEmpty()) {
             int node = q.poll();
-            topoSeq[next++] = node;
+            // topoSeq[next++] = node;
+            next++;
 
             for(int neighbour : adj.get(node)) {
                 indegree[neighbour]--;
