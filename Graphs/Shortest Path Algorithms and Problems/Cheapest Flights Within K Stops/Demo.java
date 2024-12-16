@@ -44,6 +44,8 @@ class Solution {
                 int v = neighbour.node;
                 int flightPrice = neighbour.price;
 
+                // flights[(u, v, price)] => [[0,1,1], [1,2,1], [0,2,5], [2,3,1]]
+                // this example explains why we considered cost instead of price[u]
                 if (cost + flightPrice < price[v] && stops <= k) {
                     price[v] = cost + flightPrice;
                     pq.offer(new Tuple(price[v], v, stops + 1));
