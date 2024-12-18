@@ -17,6 +17,9 @@ class Solution {
                         mat[i][j] = Math.min(mat[i][j], mat[i][k] + mat[k][j]);
                 }
         }
+
+        // for(int i = 0; i < N; ++i)
+        //     if(mat[i][i] < 0) return -1; // negative cycle detected
         
         for (int row = 0; row < N; ++row) {
             int i = row;
