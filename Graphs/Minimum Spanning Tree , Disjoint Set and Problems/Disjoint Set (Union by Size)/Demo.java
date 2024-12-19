@@ -27,15 +27,15 @@ class DisjoinSet {
 
         if(repOfX == repOfY) return; // part of the same set
 
-        if(size.get(repOfX) < size.get(repOfY))
+        int sum = size.get(repOfX) + size.get(repOfY);
+
+        if(size.get(repOfX) < size.get(repOfY)) {
             parent.set(repOfX, repOfY);
-        else if(size.get(repOfX) > size.get(repOfY))
-            parent.set(repOfY, repOfX);
+            size.set(repOfY, sum);
+        }
         else {
             parent.set(repOfY, repOfX);
-            int sizeX = size.get(repOfX);
-            int sizeY = size.get(repOfY);
-            size.set(repOfX, sizeX + sizeY);
+            size.set(repOfX, sum);
         }
     }
 }
@@ -52,5 +52,7 @@ public class Demo {
         System.out.println("Rep of 4 : " + ds.find(4));
         System.out.println("Rep of 5 : " + ds.find(5));
         System.out.println("Rep of 6 : " + ds.find(6));
+
+        System.out.println(ds.size);
     }
 }
