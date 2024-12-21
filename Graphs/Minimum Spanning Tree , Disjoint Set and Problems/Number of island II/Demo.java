@@ -26,6 +26,8 @@ class Solution {
         return true;
     }
     static int updateIslands(Node[][] grid, int x, int y) {
+        if(grid[x][y] != null) return islands;
+        
         int n = grid.length;
         int m = grid[0].length;
         int[][] direction = {{0,-1},{-1,0},{0,1},{1,0}};
