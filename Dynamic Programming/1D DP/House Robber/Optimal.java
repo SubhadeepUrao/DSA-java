@@ -2,7 +2,7 @@ class Solution {
     public int rob(int[] nums) {
         int N = nums.length;
 
-        int prev = nums[0];
+        int prev = 0;
         int prev2 = 0;
 
         for(int i = 0; i < N; ++i) {
