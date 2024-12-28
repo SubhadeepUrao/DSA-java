@@ -11,8 +11,7 @@ class Solution {
         int target = (total + d) >> 1;
         int[][] dp = new int[N + 1][target + 1];
 
-        for (int i = 0; i <= N; ++i)
-            dp[i][0] = 1;
+        dp[0][0] = 1;
 
         for (int i = 1; i <= N; ++i) {
             for (int j = 0; j <= target; ++j) {
