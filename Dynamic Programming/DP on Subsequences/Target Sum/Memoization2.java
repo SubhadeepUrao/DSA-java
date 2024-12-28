@@ -1,3 +1,4 @@
+// same as Count Partitions with given difference
 class Solution {
     int findTargetSumWays(int[] nums, int i, int target, Integer[][] dp) {
         if(i < 0 && target == 0) return 1;
