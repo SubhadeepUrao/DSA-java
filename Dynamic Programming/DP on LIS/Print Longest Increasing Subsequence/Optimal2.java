@@ -10,7 +10,6 @@ class Optimal2 {
         Arrays.fill(dp, 1);
         Arrays.fill(previous, -1);
         int maxi = 0;
-        dp[0] = 1;
 
         for(int i = 1; i < N; ++i) {
             for(int prev = 0; prev < i; ++prev) {
