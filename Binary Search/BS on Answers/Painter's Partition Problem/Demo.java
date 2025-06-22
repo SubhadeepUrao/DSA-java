@@ -20,10 +20,10 @@ public class Demo {
     }
 
     public static int paintersPartition(int[] boards, int k) {
-        int mini = Integer.MAX_VALUE;
+        int mini = 0;
         int maxi = 0;
         for(int length: boards) {
-            mini = Math.min(mini, length);
+            mini = Math.max(mini, length);
             maxi += length;
         }
 
