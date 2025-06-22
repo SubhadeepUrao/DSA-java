@@ -20,10 +20,10 @@ public class Demo {
     }
 
     public static int largestSubarraySumMinimized(int[] nums, int k) {
-        int mini = Integer.MAX_VALUE;
+        int mini = 0;
         int maxi = 0;
         for(int elem: nums) {
-            mini = Math.min(mini, elem);
+            mini = Math.max(mini, elem);
             maxi += elem;
         }
         
