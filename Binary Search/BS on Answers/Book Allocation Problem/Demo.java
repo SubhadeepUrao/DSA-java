@@ -24,11 +24,11 @@ public class Demo {
     }
     public static int findPages(ArrayList<Integer> books, int n, int m) {
         if(n < m) return -1;
-        int mini = 1000_000_000;
+        int mini = 0;
         int maxi = 0;
 
         for(int pages: books) {
-            mini = Math.min(mini, pages);
+            mini = Math.max(mini, pages);
             maxi += pages;
         }
 
