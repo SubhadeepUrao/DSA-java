@@ -24,15 +24,14 @@ public class Demo {
             ch = s.charAt(i);
             if(Character.isDigit(ch)) {
                 num = num * 10 + ch - 48;
-                if(neg && num < 0) return Integer.MIN_VALUE;
-                // else if(num < 0) return Integer.MAX_VALUE;
-                else if(!neg && num > Integer.MAX_VALUE) return Integer.MAX_VALUE;
+                if(neg && num > Integer.MAX_VALUE) return Integer.MIN_VALUE;
+                else if(!neg && num >= Integer.MAX_VALUE) return Integer.MAX_VALUE;
             }
             else break;
         }
         if(neg) num = -num;
-        if(num > Integer.MAX_VALUE) return Integer.MAX_VALUE;
-        if(num < Integer.MIN_VALUE) return Integer.MIN_VALUE;
+        if(num >= Integer.MAX_VALUE) return Integer.MAX_VALUE;
+        if(num <= Integer.MIN_VALUE) return Integer.MIN_VALUE;
         return (int)num;
     }
     public static void main(String args[]) throws IOException {
